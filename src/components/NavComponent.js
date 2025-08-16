@@ -5,18 +5,18 @@ class NavComponent extends HTMLElement {
 
     render() {
         this.innerHTML = `
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" data-bs-spy="scroll" data-bs-target="#navbarNav">
                 <div class="container">
-                    <a class="navbar-brand text-white fw-bold" href="#">Pierre Nogaro</a>
+                    <a class="navbar-brand text-white fw-bold" href="#hero" data-bs-smooth-scroll="true">Pierre Nogaro</a>
                     
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#projects">Projects</a>
+                                <a class="nav-link text-white" href="#about" data-bs-smooth-scroll="true">About</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#contact">Contact</a>
