@@ -8,7 +8,7 @@ class NavComponent extends HTMLElement {
             <nav class="navbar navbar-expand-lg transparent-nav fixed-top">
                 <div class="container">
                     <a class="navbar-brand" href="#hero">
-                        ⚓ Pierre Nogaro
+                        Pierre Nogaro
                     </a>
                     
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -18,13 +18,13 @@ class NavComponent extends HTMLElement {
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="#about">👨‍💻 À propos</a>
+                                <a class="nav-link" href="#about">À propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">📧 Contact</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#projects">🚀 Projets</a>
+                                <a class="nav-link" href="#projects">Projets</a>
                             </li>
                         </ul>
                     </div>

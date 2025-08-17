@@ -16,7 +16,7 @@ class HomeComponent extends HTMLElement {
                         <div class="col-lg-8 text-center text-white">
                             <h1 class="display-2 fw-bold mb-4">Pierre Nogaro</h1>
                             <p class="lead mb-4">Développeur Web & Designer</p>
-                            <p class="mb-4">🌊 Donnez vie à vos projets web avec un développeur passionné de Lyon 🌊</p>
+                            <p class="mb-4">Donnez vie à vos projets web avec un développeur passionné de Lyon</p>
                             <a href="#about" class="btn btn-mediterranean btn-lg">En savoir plus</a>
                         </div>
                     </div>

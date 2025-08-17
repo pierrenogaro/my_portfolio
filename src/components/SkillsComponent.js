@@ -9,7 +9,7 @@ class SkillsComponent extends HTMLElement {
                 <div class="container">
                     <div class="row">
                         <div class="col-12 text-center mb-5">
-                            <h2 class="text-white">⚡ Mes Compétences</h2>
+                            <h2 class="text-white">Mes Compétences</h2>
                             <hr class="skills-divider">
                         </div>
                         

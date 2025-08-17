@@ -13,16 +13,10 @@ class AboutComponent extends HTMLElement {
                                  class="img-fluid rounded shadow about-border">
                         </div>
                         <div class="col-lg-6">
-                            <h2 class="mb-4 display-5 text-dark">👨‍💻 À propos de moi</h2>
+                            <h2 class="mb-4 display-5 text-dark">À propos de moi</h2>
                             <p class="lead mb-4 text-dark">
                                 Passionné par le développement web et le design, 
                                 je crée des expériences digitales modernes et intuitives.
-                            </p>
-                            <p class="mb-4 text-dark">
-                                Spécialisé en JavaScript, React, et technologies web modernes,
-                                j'accompagne mes clients dans la réalisation de leurs projets digitaux.
-                                Originaire de Marseille, j'apporte cette énergie méditerranéenne 
-                                dans chaque projet que je réalise.
                             </p>
                         </div>
                     </div>
