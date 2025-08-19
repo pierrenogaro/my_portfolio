@@ -27,10 +27,15 @@ class AboutComponent extends HTMLElement {
                 .white-section {
                     background: rgba(140,194,255,0.65);
                     color: #333;
+                    position: relative;
+                    z-index: 20;
                 }
 
                 .about-border {
                     border: 3px solid #4ecdc4;
+                    border-radius: 20px;
+                    position: relative;
+                    z-index: 25;
                 }
             </style>
         `;
