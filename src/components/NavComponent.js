@@ -37,23 +37,33 @@ class NavComponent extends HTMLElement {
                 }
 
                 .navbar-brand {
-                    color: white;
+                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
                     font-weight: 700;
                     font-size: 1.4rem;
                 }
 
                 .navbar-brand:hover {
-                    color: #4a90e2;
+                    background: linear-gradient(45deg, #ff5252, #26a69a);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
                 }
 
                 .nav-link {
                     color: white;
                     margin: 0 0.5rem;
                     font-weight: 500;
+                    transition: all 0.3s ease;
                 }
 
                 .nav-link:hover {
-                    color: #4a90e2;
+                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    background-clip: text;
                 }
 
                 .navbar-toggler {

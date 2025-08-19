@@ -12,10 +12,14 @@ class HomeComponent extends HTMLElement {
                 <div class="container content-container">
                     <div class="row justify-content-center align-items-center hero-section">
                         <div class="col-lg-8 text-center text-white">
-                            <h1 class="display-2 fw-bold mb-4">Pierre Nogaro</h1>
-                            <p class="lead mb-4">Développeur Web & Designer</p>
-                            <p class="mb-4">Donnez vie à vos projets web avec un développeur passionné de Lyon</p>
-                            <a href="#about" class="btn btn-mediterranean btn-lg">En savoir plus</a>
+                            <h1 class="display-2 fw-bold mb-4">Vous recherchez un développeur web ?</h1>
+                            <div class="title-underline"></div>
+                            <p class="lead">Étudiant en 3ᵉ année d'alternance et passionné par le web & le design, je serais ravi de mettre mes compétences et mon énergie au service de votre projet.</p>
+                            <a href="#about" class="scroll-arrow">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 10L12 15L17 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -67,6 +71,45 @@ class HomeComponent extends HTMLElement {
                     transform: translateY(-2px);
                     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
                 }
+
+                .title-underline {
+                    width: 80px;
+                    height: 4px;
+                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    margin: 0 auto 2rem auto;
+                    border-radius: 2px;
+                }
+
+                .scroll-arrow {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 60px;
+                    height: 60px;
+                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    border-radius: 50%;
+                    color: white;
+                    text-decoration: none;
+                    transition: all 0.3s ease;
+                    margin-top: 2rem;
+                }
+
+                .scroll-arrow:hover {
+                    background: linear-gradient(45deg, #ff5252, #26a69a);
+                    transform: translateY(-3px);
+                    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+                    color: white;
+                }
+
+                .scroll-arrow svg {
+                    transition: transform 0.3s ease;
+                }
+
+                .scroll-arrow:hover svg {
+                    transform: translateY(2px);
+                }
+
+
 
                 @media (max-width: 768px) {
                     .particles-section {

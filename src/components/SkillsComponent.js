@@ -85,8 +85,7 @@ class SkillsComponent extends HTMLElement {
 
             <style>
                 .blue-section {
-                    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 50%, #4a90e2 100%);
-                }
+background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);                }
 
                 .skills-divider {
                     width: 100px;
