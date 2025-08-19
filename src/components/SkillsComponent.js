@@ -10,7 +10,7 @@ class SkillsComponent extends HTMLElement {
                     <div class="row">
                         <div class="col-12 text-center mb-5">
                             <h2 class="text-white">Mes Compétences</h2>
-                            <hr class="skills-divider">
+                            <div class="title-underline-skills"></div>
                         </div>
                         
                         <div class="col-md-4 mb-4">
@@ -87,12 +87,12 @@ class SkillsComponent extends HTMLElement {
                 .blue-section {
 background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);                }
 
-                .skills-divider {
-                    width: 100px;
-                    height: 3px;
-                    background: linear-gradient(90deg, #ff6b6b, #4ecdc4);
-                    margin: 2rem auto;
-                    border: none;
+                .title-underline-skills {
+                    width: 80px;
+                    height: 4px;
+                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    margin: 0 auto 2rem auto;
+                    border-radius: 2px;
                 }
 
                 .skill-card {

@@ -7,7 +7,7 @@ class NavComponent extends HTMLElement {
         this.innerHTML = `
             <nav class="navbar navbar-expand-lg transparent-nav fixed-top">
                 <div class="container">
-                    <a class="navbar-brand" href="#hero">
+                    <a class="navbar-brand" href="#home">
                         Pierre Nogaro
                     </a>
                     
@@ -21,10 +21,10 @@ class NavComponent extends HTMLElement {
                                 <a class="nav-link" href="#about">À propos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="#skills">Compétences</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#projects">Projets</a>
+                                <a class="nav-link" href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
