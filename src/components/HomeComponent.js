@@ -29,7 +29,7 @@ class HomeComponent extends HTMLElement {
                 .particles-section {
                     position: relative;
                     overflow: hidden;
-                    padding: 4rem 0 !important;
+                    padding: 4rem 0;
                     min-height: 100vh;
                     display: flex;
                     align-items: center;
