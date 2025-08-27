@@ -9,7 +9,7 @@ class ContactComponent extends HTMLElement {
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 text-center">
-                            <h2 class="display-5 text-white fw-bold mb-4" style="font-size: 2.5rem;">Contactez-moi</h2>
+                            <h2 class="display-5 text-white fw-bold" style="font-size: 2.5rem;">Contactez-moi</h2>
                             <div class="title-underline-contact"></div>
                             <p class="text-white mb-5">
                                 Vous avez un projet en tête ? Une question ? N'hésitez pas à me contacter ! <br>

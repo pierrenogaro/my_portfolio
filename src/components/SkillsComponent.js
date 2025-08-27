@@ -102,6 +102,18 @@ background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);     
                     height: 100%;
                     border: 1px solid rgba(255,255,255,0.2);
                     min-height: 200px;
+                    backdrop-filter: blur(15px);
+                    -webkit-backdrop-filter: blur(15px);
+                    transition: all 0.3s ease;
+                    position: relative;
+                    z-index: 1;
+                }
+
+                .skill-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+                    background: rgba(255,255,255,0.1);
+                    border-color: rgba(255,255,255,0.3);
                 }
 
                 .skill-card h5 {
