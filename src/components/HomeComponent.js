@@ -101,13 +101,7 @@ class HomeComponent extends HTMLElement {
                     color: white;
                 }
 
-                .scroll-arrow svg {
-                    transition: transform 0.3s ease;
-                }
 
-                .scroll-arrow:hover svg {
-                    transform: translateY(2px);
-                }
 
 
 
