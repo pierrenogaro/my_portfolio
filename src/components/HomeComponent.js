@@ -33,7 +33,7 @@ class HomeComponent extends HTMLElement {
                     min-height: 100vh;
                     display: flex;
                     align-items: center;
-                    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+                    background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 50%, var(--bg-dark-3) 100%);
                 }
 
                 .particles-container {
@@ -58,24 +58,24 @@ class HomeComponent extends HTMLElement {
                     z-index: 10;
                 }
 
-                .btn-mediterranean {
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                .btn-theme {
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     border: none;
                     color: white;
                     font-weight: 600;
                     transition: all 0.3s ease;
                 }
 
-                .btn-mediterranean:hover {
-                    background: linear-gradient(45deg, #ff5252, #26a69a);
+                .btn-theme:hover {
+                    background: linear-gradient(45deg, var(--color-primary-dark), var(--color-secondary-dark));
                     transform: translateY(-2px);
-                    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+                    box-shadow: 0 10px 25px var(--transparent-black-20);
                 }
 
                 .title-underline {
                     width: 80px;
                     height: 4px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     margin: 0 auto 2rem auto;
                     border-radius: 2px;
                 }
@@ -86,7 +86,7 @@ class HomeComponent extends HTMLElement {
                     justify-content: center;
                     width: 60px;
                     height: 60px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     border-radius: 50%;
                     color: white;
                     text-decoration: none;
@@ -95,9 +95,9 @@ class HomeComponent extends HTMLElement {
                 }
 
                 .scroll-arrow:hover {
-                    background: linear-gradient(45deg, #ff5252, #26a69a);
+                    background: linear-gradient(45deg, var(--color-primary-dark), var(--color-secondary-dark));
                     transform: translateY(-3px);
-                    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+                    box-shadow: 0 10px 25px var(--transparent-black-30);
                     color: white;
                 }
 
@@ -127,7 +127,7 @@ class HomeComponent extends HTMLElement {
                         }
                     },
                     color: {
-                        value: "#ffffff"
+                        value: "#fff8f0"
                     },
                     shape: {
                         type: "circle"
@@ -155,7 +155,7 @@ class HomeComponent extends HTMLElement {
                     line_linked: {
                         enable: true,
                         distance: 150,
-                        color: "#ffffff",
+                        color: "#fff8f0",
                         opacity: 0.4,
                         width: 1
                     },

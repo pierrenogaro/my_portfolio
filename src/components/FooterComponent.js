@@ -41,8 +41,8 @@ class FooterComponent extends HTMLElement {
 
             <style>
                 .footer-section {
-                    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
-                    color: white;
+                    background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 50%, var(--bg-dark-3) 100%);
+                    color: var(--text-white);
                     padding: 3rem 0 2rem 0;
                 }
 
@@ -56,20 +56,20 @@ class FooterComponent extends HTMLElement {
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    color: #ffffff;
+                    color: var(--text-white);
                     text-decoration: none;
                     padding: 0.5rem 1rem;
                     border-radius: 25px;
-                    background: rgba(255, 255, 255, 0.1);
+                    background: var(--transparent-white-10);
                     transition: all 0.3s ease;
                     font-weight: 500;
                 }
 
                 .social-link:hover {
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-                    color: white;
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+                    color: var(--text-white);
                     transform: translateY(-2px);
-                    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                    box-shadow: 0 5px 15px var(--transparent-black-30);
                     text-decoration: none;
                 }
 
@@ -79,30 +79,30 @@ class FooterComponent extends HTMLElement {
                 }
 
                 .legal-link {
-                    color: #ffffff;
+                    color: var(--text-white);
                     text-decoration: none;
                     padding: 0.5rem 1rem;
                     border-radius: 25px;
-                    background: rgba(255, 255, 255, 0.1);
+                    background: var(--transparent-white-10);
                     transition: all 0.3s ease;
                     font-weight: 500;
                 }
 
                 .legal-link:hover {
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-                    color: white;
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+                    color: var(--text-white);
                     transform: translateY(-2px);
-                    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+                    box-shadow: 0 5px 15px var(--transparent-black-30);
                     text-decoration: none;
                 }
 
                 .footer-divider {
-                    border-color: rgba(255, 255, 255, 0.2);
+                    border-color: var(--transparent-white-20);
                     margin: 2rem 0 1rem 0;
                 }
 
                 .copyright-text {
-                    color: #cccccc;
+                    color: var(--text-gray);
                     margin: 0;
                     font-size: 0.9rem;
                 }

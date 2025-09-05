@@ -146,8 +146,8 @@ class ContactComponent extends HTMLElement {
 
             <style>
                 .contact-section {
-                    background: rgba(53,110,177,0.65);
-                    color: #333;
+                    background: var(--bg-blue-transparent);
+                    color: var(--text-dark);
                     position: relative;
                     z-index: 20;
                 }
@@ -155,7 +155,7 @@ class ContactComponent extends HTMLElement {
                 .title-underline-contact {
                     width: 80px;
                     height: 4px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     margin: 0 auto 2rem auto;
                     border-radius: 2px;
                 }
@@ -165,43 +165,43 @@ class ContactComponent extends HTMLElement {
                 }
 
                 .contact-card {
-                    background: rgba(255, 255, 255, 0.1);
+                    background: var(--transparent-white-10);
                     border-radius: 20px;
                     padding: 2.5rem 2rem;
                     text-align: center;
                     backdrop-filter: blur(10px);
-                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border: 1px solid var(--transparent-white-20);
                     transition: all 0.3s ease;
                     height: 100%;
                 }
 
                 .contact-card:hover {
                     transform: translateY(-5px);
-                    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-                    background: rgba(255, 255, 255, 0.15);
+                    box-shadow: 0 15px 35px var(--transparent-black-20);
+                    background: var(--transparent-white-15);
                 }
 
                 .contact-icon {
                     width: 80px;
                     height: 80px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     margin: 0 auto 1.5rem auto;
-                    color: white;
+                    color: var(--text-white);
                 }
 
                 .contact-card h3 {
-                    color: white;
+                    color: var(--text-white);
                     font-size: 1.5rem;
                     font-weight: 600;
                     margin-bottom: 1rem;
                 }
 
                 .contact-card p {
-                    color: rgba(255, 255, 255, 0.8);
+                    color: var(--transparent-white-80);
                     margin-bottom: 1.5rem;
                     line-height: 1.6;
                 }
@@ -210,8 +210,8 @@ class ContactComponent extends HTMLElement {
                     display: inline-flex;
                     align-items: center;
                     gap: 0.5rem;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-                    color: white;
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+                    color: var(--text-white);
                     text-decoration: none;
                     padding: 0.75rem 1.5rem;
                     border-radius: 25px;
@@ -220,65 +220,65 @@ class ContactComponent extends HTMLElement {
                 }
 
                 .contact-btn:hover {
-                    background: linear-gradient(45deg, #ff5252, #26a69a);
+                    background: linear-gradient(45deg, var(--color-primary-dark), var(--color-secondary-dark));
                     transform: translateY(-2px);
-                    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-                    color: white;
+                    box-shadow: 0 5px 15px var(--transparent-black-30);
+                    color: var(--text-white);
                     text-decoration: none;
                 }
 
                 .contact-info {
-                    background: rgba(255, 255, 255, 0.1);
+                    background: var(--transparent-white-10);
                     border-radius: 15px;
                     padding: 2rem;
                     backdrop-filter: blur(10px);
-                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border: 1px solid var(--transparent-white-20);
                 }
 
                 /* Styles du formulaire */
                 .contact-form-container {
-                    background: rgba(255, 255, 255, 0.1);
+                    background: var(--transparent-white-10);
                     border-radius: 20px;
                     padding: 2.5rem;
                     backdrop-filter: blur(10px);
-                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    border: 1px solid var(--transparent-white-20);
                     margin-bottom: 3rem;
                 }
 
                 .form-label {
-                    color: white;
+                    color: var(--text-white);
                     font-weight: 500;
                     margin-bottom: 0.5rem;
                 }
 
                 .form-control {
-                    background: rgba(255, 255, 255, 0.1);
-                    border: 1px solid rgba(255, 255, 255, 0.3);
+                    background: var(--transparent-white-10);
+                    border: 1px solid var(--transparent-white-30);
                     border-radius: 10px;
-                    color: white;
+                    color: var(--text-white);
                     padding: 0.75rem 1rem;
                     transition: all 0.3s ease;
                 }
 
                 .form-control:focus {
-                    background: rgba(255, 255, 255, 0.15);
-                    border-color: #4ecdc4;
+                    background: var(--transparent-white-15);
+                    border-color: var(--color-secondary);
                     box-shadow: 0 0 0 0.2rem rgba(78, 205, 196, 0.25);
-                    color: white;
+                    color: var(--text-white);
                 }
 
                 .form-control::placeholder {
-                    color: rgba(255, 255, 255, 0.6);
+                    color: var(--transparent-white-60);
                 }
 
                 .form-control option {
-                    background: #1a1a2e;
-                    color: white;
+                    background: var(--bg-dark-2);
+                    color: var(--text-white);
                 }
 
                 .form-notice {
-                    background: rgba(255, 193, 7, 0.1);
-                    border: 1px solid rgba(255, 193, 7, 0.3);
+                    background: var(--transparent-warning-10);
+                    border: 1px solid var(--transparent-warning-30);
                     border-radius: 15px;
                     padding: 2rem;
                     margin-top: 1rem;
@@ -287,24 +287,24 @@ class ContactComponent extends HTMLElement {
                 .notice-icon {
                     width: 60px;
                     height: 60px;
-                    background: linear-gradient(45deg, #ffc107, #ff9800);
+                    background: linear-gradient(45deg, var(--color-warning), var(--color-orange));
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     margin: 0 auto 1rem auto;
-                    color: white;
+                    color: var(--text-white);
                 }
 
                 .form-notice h4 {
-                    color: #ffc107;
+                    color: var(--color-warning);
                     font-size: 1.3rem;
                     font-weight: 600;
                     margin-bottom: 1rem;
                 }
 
                 .form-notice p {
-                    color: rgba(255, 255, 255, 0.9);
+                    color: var(--transparent-white-90);
                     margin-bottom: 1.5rem;
                     line-height: 1.6;
                 }
@@ -320,8 +320,8 @@ class ContactComponent extends HTMLElement {
                     display: flex;
                     align-items: center;
                     gap: 0.5rem;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
-                    color: white;
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+                    color: var(--text-white);
                     text-decoration: none;
                     padding: 0.75rem 1.5rem;
                     border-radius: 25px;
@@ -332,10 +332,10 @@ class ContactComponent extends HTMLElement {
                 }
 
                 .contact-alternative:hover {
-                    background: linear-gradient(45deg, #ff5252, #26a69a);
+                    background: linear-gradient(45deg, var(--color-primary-dark), var(--color-secondary-dark));
                     transform: translateY(-2px);
-                    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-                    color: white;
+                    box-shadow: 0 5px 15px var(--transparent-black-30);
+                    color: var(--text-white);
                     text-decoration: none;
                 }
 

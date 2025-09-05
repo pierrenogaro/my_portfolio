@@ -85,22 +85,22 @@ class SkillsComponent extends HTMLElement {
 
             <style>
                 .blue-section {
-background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);                }
+background: linear-gradient(135deg, var(--bg-dark-1) 0%, var(--bg-dark-2) 50%, var(--bg-dark-3) 100%);                }
 
                 .title-underline-skills {
                     width: 80px;
                     height: 4px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     margin: 0 auto 2rem auto;
                     border-radius: 2px;
                 }
 
                 .skill-card {
-                    background: rgba(255,255,255,0.1);
+                    background: var(--transparent-white-10);
                     border-radius: 10px;
                     padding: 1.5rem;
                     height: 100%;
-                    border: 1px solid rgba(255,255,255,0.2);
+                    border: 1px solid var(--transparent-white-20);
                     min-height: 200px;
                     backdrop-filter: blur(15px);
                     -webkit-backdrop-filter: blur(15px);
@@ -111,13 +111,13 @@ background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);     
 
                 .skill-card:hover {
                     transform: translateY(-5px);
-                    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-                    background: rgba(255,255,255,0.1);
-                    border-color: rgba(255,255,255,0.3);
+                    box-shadow: 0 15px 35px var(--transparent-black-30);
+                    background: var(--transparent-white-10);
+                    border-color: var(--transparent-white-30);
                 }
 
                 .skill-card h5 {
-                    color: #f8f9fa;
+                    color: var(--text-light-gray);
                     margin-bottom: 1rem;
                     font-size: 1.2rem;
                 }
@@ -129,7 +129,7 @@ background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);     
                 }
 
                 .skill-card li {
-                    color: #e8f5e8;
+                    color: var(--text-light-green);
                     margin-bottom: 0.5rem;
                     font-size: 1rem;
                 }

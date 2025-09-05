@@ -61,14 +61,13 @@ class ChatComponent extends HTMLElement {
                 .chat-toggle {
                     width: 60px;
                     height: 60px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: white;
-                    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8 6L3 12L8 18M16 6L21 12L16 18' stroke='%234ecdc4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%234ecdc4'/%3E%3C/svg%3E") 12 12, pointer;
-                    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+                    color: var(--text-white);
+                    box-shadow: 0 8px 25px var(--transparent-black-30);
                     transition: all 0.3s ease;
                     position: relative;
                 }
@@ -85,8 +84,8 @@ class ChatComponent extends HTMLElement {
                     position: absolute;
                     top: -5px;
                     right: -5px;
-                    background: #ff4757;
-                    color: white;
+                    background: var(--color-badge);
+                    color: var(--text-white);
                     border-radius: 50%;
                     width: 20px;
                     height: 20px;
@@ -106,8 +105,8 @@ class ChatComponent extends HTMLElement {
                     background: rgba(26, 26, 46, 0.95);
                     backdrop-filter: blur(15px);
                     border-radius: 20px;
-                    border: 1px solid rgba(255, 255, 255, 0.2);
-                    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+                    border: 1px solid var(--transparent-white-20);
+                    box-shadow: 0 20px 60px var(--transparent-black-40);
                     display: none;
                     flex-direction: column;
                 }
@@ -117,7 +116,7 @@ class ChatComponent extends HTMLElement {
                 }
 
                 .chat-header {
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     padding: 15px 20px;
                     display: flex;
                     align-items: center;
@@ -128,12 +127,12 @@ class ChatComponent extends HTMLElement {
                 .chat-avatar {
                     width: 40px;
                     height: 40px;
-                    background: rgba(255, 255, 255, 0.2);
+                    background: var(--transparent-white-20);
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: white;
+                    color: var(--text-white);
                 }
 
                 .chat-info {
@@ -141,30 +140,28 @@ class ChatComponent extends HTMLElement {
                 }
 
                 .chat-info h4 {
-                    color: white;
+                    color: var(--text-white);
                     margin: 0;
                     font-size: 16px;
                     font-weight: 600;
                 }
 
                 .status {
-                    color: rgba(255, 255, 255, 0.8);
+                    color: var(--transparent-white-80);
                     font-size: 12px;
                 }
 
                 .chat-close {
                     background: none;
                     border: none;
-                    color: white;
-                    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8 6L3 12L8 18M16 6L21 12L16 18' stroke='%234ecdc4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%234ecdc4'/%3E%3C/svg%3E") 12 12, pointer !important;
+                    color: var(--text-white);
                     padding: 5px;
                     border-radius: 5px;
                     transition: background 0.3s ease;
                 }
 
                 .chat-close:hover {
-                    background: rgba(255, 255, 255, 0.2);
-                    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8 6L3 12L8 18M16 6L21 12L16 18' stroke='%234ecdc4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%234ecdc4'/%3E%3C/svg%3E") 12 12, pointer;
+                    background: var(--transparent-white-20);
                 }
 
                 .chat-messages {
@@ -180,16 +177,16 @@ class ChatComponent extends HTMLElement {
                     max-width: 80%;
                     padding: 12px 16px;
                     border-radius: 18px;
-                    color: white;
+                    color: var(--text-white);
                 }
 
                 .message.received {
-                    background: rgba(255, 255, 255, 0.1);
+                    background: var(--transparent-white-10);
                     align-self: flex-start;
                 }
 
                 .message.sent {
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     align-self: flex-end;
                 }
 
@@ -213,27 +210,26 @@ class ChatComponent extends HTMLElement {
 
                 .chat-input input {
                     flex: 1;
-                    background: rgba(255, 255, 255, 0.1);
-                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    background: var(--transparent-white-10);
+                    border: 1px solid var(--transparent-white-20);
                     border-radius: 25px;
                     padding: 12px 20px;
-                    color: white;
+                    color: var(--text-white);
                     font-size: 14px;
                     outline: none;
                 }
 
                 .chat-input input::placeholder {
-                    color: rgba(255, 255, 255, 0.6);
+                    color: var(--transparent-white-60);
                 }
 
                 .chat-input button {
                     width: 40px;
                     height: 40px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     border: none;
                     border-radius: 50%;
-                    color: white;
-                    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8 6L3 12L8 18M16 6L21 12L16 18' stroke='%234ecdc4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%234ecdc4'/%3E%3C/svg%3E") 12 12, pointer;
+                    color: var(--text-white);
                     display: flex;
                     align-items: center;
                     justify-content: center;

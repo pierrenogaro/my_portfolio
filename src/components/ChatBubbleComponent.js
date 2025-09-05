@@ -19,10 +19,10 @@ class ChatBubbleComponent extends HTMLElement {
                     position: absolute;
                     bottom: 80px;
                     left: 0;
-                    background: white;
+                    background: var(--text-white);
                     border-radius: 20px;
                     padding: 20px 25px;
-                    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+                    box-shadow: 0 10px 30px var(--transparent-black-30);
                     animation: bubbleBounce 2s ease-in-out infinite;
                     display: flex;
                     align-items: center;
@@ -42,13 +42,13 @@ class ChatBubbleComponent extends HTMLElement {
                 }
 
                 .bubble-title {
-                    color: #333;
+                    color: var(--text-dark);
                     font-weight: bold;
                     font-size: 16px;
                 }
 
                 .bubble-message {
-                    color: #666;
+                    color: var(--text-medium-gray);
                     font-size: 14px;
                 }
 
@@ -60,7 +60,7 @@ class ChatBubbleComponent extends HTMLElement {
                     height: 0;
                     border-left: 10px solid transparent;
                     border-right: 10px solid transparent;
-                    border-top: 10px solid white;
+                    border-top: 10px solid var(--text-white);
                     filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
                 }
 

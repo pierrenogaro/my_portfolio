@@ -29,14 +29,14 @@ class AboutComponent extends HTMLElement {
 
             <style>
                 .white-section {
-                    background: rgba(53,110,177,0.65);
-                    color: #333;
+                    background: var(--bg-blue-transparent);
+                    color: var(--text-dark);
                     position: relative;
                     z-index: 20;
                 }
 
                 .about-border {
-                    border: 3px solid #4ecdc4;
+                    border: 3px solid var(--color-secondary);
                     border-radius: 20px;
                     position: relative;
                     z-index: 25;
@@ -45,7 +45,7 @@ class AboutComponent extends HTMLElement {
                 .title-underline-about {
                     width: 80px;
                     height: 4px;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     margin: 0 auto 2rem auto;
                     border-radius: 2px;
                 }
@@ -60,7 +60,7 @@ class AboutComponent extends HTMLElement {
                     display: inline-flex;
                     align-items: center;
                     gap: 0.5rem;
-                    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+                    background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
                     color: white;
                     text-decoration: none;
                     padding: 0.75rem 1.5rem;
@@ -68,13 +68,13 @@ class AboutComponent extends HTMLElement {
                     font-weight: 600;
                     font-size: 1rem;
                     transition: all 0.3s ease;
-                    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+                    box-shadow: 0 4px 15px var(--transparent-black-20);
                 }
 
                 .btn-continue:hover {
-                    background: linear-gradient(45deg, #ff5252, #26a69a);
+                    background: linear-gradient(45deg, var(--color-primary-dark), var(--color-secondary-dark));
                     transform: translateY(-3px);
-                    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+                    box-shadow: 0 8px 25px var(--transparent-black-30);
                     color: white;
                 }
 

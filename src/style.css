@@ -1,3 +1,87 @@
+/* Thème Eau - Palette froide */
+:root {
+    /* Couleurs principales eau */
+    --color-primary: #ff6b6b;
+    --color-secondary: #4ecdc4;
+    --color-primary-dark: #ff5252;
+    --color-secondary-dark: #26a69a;
+    
+    /* Couleurs de fond eau */
+    --bg-dark-1: #0f0f23;
+    --bg-dark-2: #1a1a2e;
+    --bg-dark-3: #16213e;
+    --bg-blue-transparent: rgba(53,110,177,0.65);
+    
+    /* Couleurs de texte eau */
+    --text-white: #ffffff;
+    --text-dark: #333;
+    --text-light-gray: #f8f9fa;
+    --text-light-green: #e8f5e8;
+    --text-gray: #cccccc;
+    --text-medium-gray: #666;
+    
+    /* Couleurs spéciales eau */
+    --color-badge: #ff4757;
+    --color-warning: #ffc107;
+    --color-orange: #ff9800;
+    
+    /* Transparences eau */
+    --transparent-white-10: rgba(255, 255, 255, 0.1);
+    --transparent-white-15: rgba(255, 255, 255, 0.15);
+    --transparent-white-20: rgba(255, 255, 255, 0.2);
+    --transparent-white-30: rgba(255, 255, 255, 0.3);
+    --transparent-white-60: rgba(255, 255, 255, 0.6);
+    --transparent-white-80: rgba(255, 255, 255, 0.8);
+    --transparent-white-90: rgba(255, 255, 255, 0.9);
+    --transparent-black-20: rgba(0, 0, 0, 0.2);
+    --transparent-black-30: rgba(0, 0, 0, 0.3);
+    --transparent-black-40: rgba(0, 0, 0, 0.4);
+    --transparent-warning-10: rgba(255, 193, 7, 0.1);
+    --transparent-warning-30: rgba(255, 193, 7, 0.3);
+}
+
+/* Thème Feu - Palette chaude */
+:root[data-theme="fire"] {
+    /* Couleurs principales feu */
+    --color-primary: #ff4500;
+    --color-secondary: #ff8c00;
+    --color-primary-dark: #cc3700;
+    --color-secondary-dark: #e67e00;
+    
+    /* Couleurs de fond feu */
+    --bg-dark-1: #2c1810;
+    --bg-dark-2: #3d2317;
+    --bg-dark-3: #4a2c1a;
+    --bg-blue-transparent: rgba(139, 69, 19, 0.65);
+    
+    /* Couleurs de texte feu */
+    --text-white: #fff8f0;
+    --text-dark: #2c1810;
+    --text-light-gray: #f5f0e8;
+    --text-light-green: #f0e8d8;
+    --text-gray: #d4c4b0;
+    --text-medium-gray: #8b7355;
+    
+    /* Couleurs spéciales feu */
+    --color-badge: #ff1744;
+    --color-warning: #ff9800;
+    --color-orange: #ff5722;
+    
+    /* Transparences feu */
+    --transparent-white-10: rgba(255, 248, 240, 0.1);
+    --transparent-white-15: rgba(255, 248, 240, 0.15);
+    --transparent-white-20: rgba(255, 248, 240, 0.2);
+    --transparent-white-30: rgba(255, 248, 240, 0.3);
+    --transparent-white-60: rgba(255, 248, 240, 0.6);
+    --transparent-white-80: rgba(255, 248, 240, 0.8);
+    --transparent-white-90: rgba(255, 248, 240, 0.9);
+    --transparent-black-20: rgba(44, 24, 16, 0.2);
+    --transparent-black-30: rgba(44, 24, 16, 0.3);
+    --transparent-black-40: rgba(44, 24, 16, 0.4);
+    --transparent-warning-10: rgba(255, 152, 0, 0.1);
+    --transparent-warning-30: rgba(255, 152, 0, 0.3);
+}
+
 * {
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8 6L3 12L8 18M16 6L21 12L16 18' stroke='%23ff6b6b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%23ff6b6b'/%3E%3C/svg%3E") 12 12, auto;
     -webkit-user-select: none;
@@ -10,20 +94,29 @@ a, button, .btn-continue, .navbar-brand, .nav-link, .scroll-arrow {
     cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8 6L3 12L8 18M16 6L21 12L16 18' stroke='%234ecdc4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%234ecdc4'/%3E%3C/svg%3E") 12 12, pointer;
 }
 
+:root[data-theme="fire"] a, 
+:root[data-theme="fire"] button, 
+:root[data-theme="fire"] .btn-continue, 
+:root[data-theme="fire"] .navbar-brand, 
+:root[data-theme="fire"] .nav-link, 
+:root[data-theme="fire"] .scroll-arrow {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M8 6L3 12L8 18M16 6L21 12L16 18' stroke='%23ff8c00' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='12' cy='12' r='1.5' fill='%23ff8c00'/%3E%3C/svg%3E") 12 12, pointer;
+}
+
 ::-webkit-scrollbar {
     width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #1a1a2e;
-    border: 1px solid #333;
+    background: var(--bg-dark-2);
+    border: 1px solid var(--text-dark);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #ff6b6b;
+    background: var(--color-primary);
     border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ff5252;
+    background: var(--color-primary-dark);
 }
